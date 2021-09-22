@@ -109,19 +109,24 @@
     line-height: 35px;
 }
 @media only screen and (max-width: 600px) {
-    #sort-by {
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        top:80px;
+    #form {
+        display: flex;
+        top:62px;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 75px;
     }
     #search-text {
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        align-self: center;
+        margin-top: 25px;
     }
+    #sort-by {
+        align-self: center;
+        margin-right: 0;
+        margin-left: 75px;
+        
+    }
+    
     .flex-container  {
         position: relative;
         display: flex;
@@ -132,6 +137,35 @@
         top:80px;
     }
 }
+@media only screen and (min-width:600px) {
+    header {
+        width: 767px; 
+
+    }
+    #form {
+        width: 600px;
+        top:62px;
+        position: absolute;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    #movie-container  {
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+    }
+    .flex-container {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin-left: 50px;
+    }
+    .col{
+        margin:65px;
+    }
+
+}
+
 @media only screen and (min-width:768px) {
     header {
         width: 767px; 
@@ -145,6 +179,8 @@
         transform: translate(-50%, -50%);
     }
     #movie-container  {
+        display: flex;
+        justify-content: center;
         margin-top: 55px;
     }
     .flex-container {
@@ -152,6 +188,59 @@
        flex-direction: row;
        flex-wrap: wrap;
        margin-left: 50px;
+    }
+    .col{
+        margin:65px;
+    }
+}
+@media only screen and (max-width:768px) {
+    header {
+        width: 767px; 
+
+    }
+    #form {
+        width: 600px;
+        top:62px;
+        position: absolute;
+    }
+    #movie-container  {
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+    }
+    .flex-container {
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin-left: 50px;
+       justify-content: center;
+    }
+    .col{
+        margin:65px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    header {
+        width: 775px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%)
+
+    }
+    #form {
+        width: 600px;
+        top:22px;
+        position: absolute;
+    }
+    #movie-container  {
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+    }
+    .flex-container {
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin-left: 50px;
+       justify-content: center;
     }
     .col{
         margin:65px;
